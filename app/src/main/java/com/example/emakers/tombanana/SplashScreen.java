@@ -9,6 +9,7 @@ public class SplashScreen extends AppCompatActivity implements Runnable{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide(); // remove a aba e titulo da activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 

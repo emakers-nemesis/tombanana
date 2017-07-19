@@ -5,26 +5,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.emakers.tombanana.MainActivity">
-
-    <Button
-        android:id="@+id/btn_calcular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calcular"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="230dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="119dp" />
+    tools:context="com.example.emakers.tombanana.DenActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_den"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_calcular"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="161dp"
-        android:text="Menu TomBanana" />
+        android:layout_centerVertical="true"
+        android:text="" />
 
+    <TextView
+        android:id="@+id/textView_teste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_den"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="" />
 </RelativeLayout>

@@ -5,26 +5,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.emakers.tombanana.MainActivity">
+    tools:context="com.example.emakers.tombanana.CenActivity">
 
     <Button
-        android:id="@+id/btn_calcular"
+        android:id="@+id/btn_cen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calcular"
+        android:text="Proximo"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="230dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="119dp" />
+        android:layout_marginBottom="161dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_cen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_calcular"
+        android:text="Digite o comprimento do engaço"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="161dp"
-        android:text="Menu TomBanana" />
+        android:layout_marginTop="126dp" />
 
+    <EditText
+        android:id="@+id/editText_cen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView_cen"
+        android:layout_alignStart="@+id/textView_cen"
+        android:layout_below="@+id/textView_cen"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:inputType="number" />
 </RelativeLayout>
