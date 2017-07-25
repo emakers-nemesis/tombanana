@@ -8,7 +8,7 @@
     tools:context="com.example.emakers.tombanana.CenActivity">
 
     <Button
-        android:id="@+id/btn_pra"
+        android:id="@+id/btn_npc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Proximo"
@@ -19,21 +19,21 @@
         android:layout_marginBottom="161dp" />
 
     <TextView
-        android:id="@+id/textView_pra"
+        android:id="@+id/textView_npc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Digite o peso da ráquis"
+        android:text="Digite o número total de pencas por cacho"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="126dp" />
 
     <EditText
-        android:id="@+id/editText_pra"
+        android:id="@+id/editText_npc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:layout_above="@+id/btn_pra"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="57dp" />
+        android:layout_below="@+id/textView_npc"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

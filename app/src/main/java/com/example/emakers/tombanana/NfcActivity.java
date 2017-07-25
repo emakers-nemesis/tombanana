@@ -8,31 +8,30 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class DenActivity extends AppCompatActivity implements View.OnClickListener {
+public class NfcActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button btn_den;
-    TextView textView_den;
-    EditText editText_den;
+    Button btn_nfc;
+    TextView textView_nfc;
+    EditText editText_nfc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_den);
+        setContentView(R.layout.activity_nfc);
 
-        btn_den = (Button) findViewById(R.id.btn_den);
-        textView_den = (TextView) findViewById(R.id.textView_den);
-        editText_den = (EditText) findViewById(R.id.editText_den);
-        btn_den.setOnClickListener(this);
-
+        btn_nfc = (Button) findViewById(R.id.btn_nfc);
+        textView_nfc = (TextView) findViewById(R.id.textView_nfc);
+        editText_nfc = (EditText) findViewById(R.id.editText_nfc);
+        btn_nfc.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v){
         Intent intent = getIntent(); // recebendo a classe alterada em PraActivity
         InputData input = (InputData) intent.getSerializableExtra("input");
-        input.setInputData(2, Double.parseDouble(editText_den.getText().toString()));
+        input.setInputData(9, Double.parseDouble(editText_nfc.getText().toString()));
 
-        Intent intent1 = new Intent(this, NpcActivity.class); // criando a nova intent que aponta para NpcActivity
+        Intent intent1 = new Intent(this, ResultActivity.class); // criando a nova intent que aponta para ResultActivity
         intent1.putExtra("input", input); // passando o obj para a intent que vai para CenActivity
         startActivity(intent1);
     }

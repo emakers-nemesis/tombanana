@@ -30,11 +30,11 @@ public class CenActivity extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick(View v){
         Intent intent = getIntent(); // recebendo a classe alterada em PraActivity
-        Bananeira bananeira = (Bananeira) intent.getSerializableExtra("bananeira");
-        bananeira.setCen(Float.parseFloat(editText_cen.getText().toString()));
+        InputData input = (InputData) intent.getSerializableExtra("input");
+        input.setInputData(1, Double.parseDouble(editText_cen.getText().toString()));
 
-        Intent intent1 = new Intent(this, DenActivity.class); // criando a nova intent que aponta para CenActivity
-        intent1.putExtra("bananeira", bananeira); // passando o obj para a intent que vai para CenActivity
+        Intent intent1 = new Intent(this, DenActivity.class); // criando a nova intent que aponta para DenActivity
+        intent1.putExtra("input", input); // passando o obj para a intent que vai para CenActivity
         startActivity(intent1);
     }
 }

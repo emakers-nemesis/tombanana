@@ -23,7 +23,15 @@
         </activity>
         <activity android:name=".PraActivity" />
         <activity android:name=".CenActivity" />
-        <activity android:name=".DenActivity"></activity>
+        <activity android:name=".DenActivity" />
+        <activity android:name=".NpcActivity" />
+        <activity android:name=".NfrActivity" />
+        <activity android:name=".PspActivity" />
+        <activity android:name=".PfrActivity" />
+        <activity android:name=".CefActivity" />
+        <activity android:name=".DfrActivity" />
+        <activity android:name=".NfcActivity" />
+        <activity android:name=".ResultActivity"></activity>
     </application>
 
 </manifest>

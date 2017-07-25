@@ -5,22 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.emakers.tombanana.DenActivity">
+    tools:context="com.example.emakers.tombanana.CenActivity">
+
+    <Button
+        android:id="@+id/btn_den"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximo"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="230dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="161dp" />
 
     <TextView
         android:id="@+id/textView_den"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Digite o diametro do engaço"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="" />
+        android:layout_marginTop="126dp" />
 
-    <TextView
-        android:id="@+id/textView_teste"
+    <EditText
+        android:id="@+id/editText_den"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
         android:layout_below="@+id/textView_den"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
-        android:text="" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
