@@ -11,7 +11,7 @@
         android:id="@+id/btn_dfr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Proximo"
+        android:text="Próximo"
         tools:layout_editor_absoluteX="147dp"
         tools:layout_editor_absoluteY="230dp"
         android:layout_alignParentBottom="true"
@@ -22,7 +22,7 @@
         android:id="@+id/textView_dfr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Digite o diametro do fruto"
+        android:text="Digite o diâmetro do fruto."
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="126dp" />
