@@ -36,7 +36,7 @@ public class CefActivity extends AppCompatActivity implements View.OnClickListen
             editText_cef.setError("O campo não pode ser vazio!");
             return;
         }
-        input.setInputData(7, Double.parseDouble(editText_cef.getText().toString()));
+        input.setInputData(7, Double.parseDouble(editText_cef.getText().toString())/19.0);
 
         Intent intent1 = new Intent(this, DfrActivity.class); // criando a nova intent que aponta para DfrActivity
         intent1.putExtra("input", input); // passando o obj para a intent que vai para CenActivity

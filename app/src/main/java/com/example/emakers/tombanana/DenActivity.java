@@ -37,7 +37,7 @@ public class DenActivity extends AppCompatActivity implements View.OnClickListen
             editText_den.setError("O campo não pode ser vazio!");
             return;
         }
-        input.setInputData(2, Double.parseDouble(editText_den.getText().toString()));
+        input.setInputData(2, Double.parseDouble(editText_den.getText().toString())/74.0);
 
         Intent intent1 = new Intent(this, NpcActivity.class); // criando a nova intent que aponta para NpcActivity
         intent1.putExtra("input", input); // passando o obj para a intent que vai para CenActivity

@@ -36,7 +36,7 @@ public class PspActivity extends AppCompatActivity implements View.OnClickListen
             editText_psp.setError("O campo não pode ser vazio!");
             return;
         }
-        input.setInputData(5, Double.parseDouble(editText_psp.getText().toString()));
+        input.setInputData(5, Double.parseDouble(editText_psp.getText().toString())/4.2);
 
         Intent intent1 = new Intent(this, PfrActivity.class); // criando a nova intent que aponta para PfrActivity
         intent1.putExtra("input", input); // passando o obj para a intent que vai para CenActivity

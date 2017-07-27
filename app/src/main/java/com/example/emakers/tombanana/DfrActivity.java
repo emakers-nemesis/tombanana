@@ -36,7 +36,7 @@ public class DfrActivity extends AppCompatActivity implements View.OnClickListen
             editText_dfr.setError("O campo não pode ser vazio!");
             return;
         }
-        input.setInputData(8, Double.parseDouble(editText_dfr.getText().toString()));
+        input.setInputData(8, Double.parseDouble(editText_dfr.getText().toString())/44.0);
 
         Intent intent1 = new Intent(this, NfcActivity.class); // criando a nova intent que aponta para NfcActivity
         intent1.putExtra("input", input); // passando o obj para a intent que vai para CenActivity

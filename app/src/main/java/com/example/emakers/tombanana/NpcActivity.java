@@ -37,7 +37,7 @@ public class NpcActivity extends AppCompatActivity implements View.OnClickListen
             editText_npc.setError("O campo não pode ser vazio!");
             return;
         }
-        input.setInputData(3, Double.parseDouble(editText_npc.getText().toString()));
+        input.setInputData(3, Double.parseDouble(editText_npc.getText().toString())/7.0);
 
         Intent intent1 = new Intent(this, NfrActivity.class); // criando a nova intent que aponta para NfrActivity
         intent1.putExtra("input", input); // passando o obj para a intent que vai para CenActivity

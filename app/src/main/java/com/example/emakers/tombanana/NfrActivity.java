@@ -36,7 +36,7 @@ public class NfrActivity extends AppCompatActivity implements View.OnClickListen
             editText_nfr.setError("O campo não pode ser vazio!");
             return;
         }
-        input.setInputData(4, Double.parseDouble(editText_nfr.getText().toString()));
+        input.setInputData(4, Double.parseDouble(editText_nfr.getText().toString())/129.0);
 
         Intent intent1 = new Intent(this, PspActivity.class); // criando a nova intent que aponta para PspActivity
         intent1.putExtra("input", input); // passando o obj para a intent que vai para CenActivity

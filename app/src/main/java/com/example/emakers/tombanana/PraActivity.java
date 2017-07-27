@@ -42,7 +42,7 @@ public class PraActivity extends AppCompatActivity implements View.OnClickListen
             editText_pra.setError("O campo não pode ser vazio!");
             return;
         }
-        input.setInputData(0,Double.parseDouble(editText_pra.getText().toString())); // pegando o valor do texto e passando para a classe
+        input.setInputData(0,Double.parseDouble(editText_pra.getText().toString())/2.6); // pegando o valor do texto e passando para a classe
 
         intent.putExtra("input", input); // passando o obj para a intent que vai para CenActivity
 

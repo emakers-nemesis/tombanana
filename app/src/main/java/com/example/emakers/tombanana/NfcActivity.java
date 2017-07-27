@@ -36,7 +36,7 @@ public class NfcActivity extends AppCompatActivity implements View.OnClickListen
             editText_nfc.setError("O campo não pode ser vazio!");
             return;
         }
-        input.setInputData(9, Double.parseDouble(editText_nfc.getText().toString()));
+        input.setInputData(9, Double.parseDouble(editText_nfc.getText().toString())/12.0);
 
         Intent intent1 = new Intent(this, ResultActivity.class); // criando a nova intent que aponta para ResultActivity
         intent1.putExtra("input", input); // passando o obj para a intent que vai para CenActivity
