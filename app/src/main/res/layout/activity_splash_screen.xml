@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash"
-    tools:context="com.example.emakers.tombanana.SplashScreen">
+    tools:context="com.emakers.tombanana.SplashScreen">
 
 </android.support.constraint.ConstraintLayout>
