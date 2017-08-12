@@ -9,30 +9,56 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen">
+        <activity android:name=".SplashScreen"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+                  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".PraActivity" />
-        <activity android:name=".CenActivity" />
-        <activity android:name=".DenActivity" />
-        <activity android:name=".NpcActivity" />
-        <activity android:name=".NfrActivity" />
-        <activity android:name=".PspActivity" />
-        <activity android:name=".PfrActivity" />
-        <activity android:name=".CefActivity" />
-        <activity android:name=".DfrActivity" />
-        <activity android:name=".NfcActivity" />
-        <activity android:name=".ResultActivity" />
-        <activity android:name=".sobreActivity"></activity>
+        <activity
+            android:name=".PraActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CenActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DenActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NpcActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NfrActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PspActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PfrActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CefActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DfrActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".NfcActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ResultActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".sobreActivity"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
