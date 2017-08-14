@@ -5,15 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.emakers.tombanana.CenActivity">
+    android:background="@drawable/background"
+    tools:context="com.emakers.tombanana.PspActivity">
     <ImageView
         android:id="@+id/image_psp"
         android:layout_width="300dp"
         android:layout_height="200dp"
         app:srcCompat="@drawable/pesosegundapenca"
-        android:layout_marginTop="15dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/btn_psp"
+        android:layout_alignEnd="@+id/btn_psp"
+        android:layout_marginTop="16dp" />
     <Button
         android:id="@+id/btn_psp"
         android:layout_width="wrap_content"

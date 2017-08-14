@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.emakers.tombanana.CenActivity">
+    android:background="@drawable/background"
+    tools:context="com.emakers.tombanana.CefActivity">
 
     <Button
         android:id="@+id/btn_cef"
@@ -38,7 +39,7 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         app:srcCompat="@drawable/comprimentofruto"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="17dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -51,7 +52,7 @@
         android:textStyle="bold"
         android:textColor="@color/colorPrimaryDark"
         android:typeface="serif"
-        android:layout_below="@+id/image_cef"
+        android:layout_above="@+id/textView"
         android:layout_centerHorizontal="true" />
 
     <EditText
@@ -73,7 +74,8 @@
         android:gravity="center"
         android:typeface="serif"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_below="@+id/textView_cef"
+        android:layout_above="@+id/editText_cef"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
 </RelativeLayout>

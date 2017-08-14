@@ -5,16 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.emakers.tombanana.CenActivity">
+    android:background="@drawable/background"
+    tools:context="com.emakers.tombanana.NfrActivity">
 
     <ImageView
         android:id="@+id/image_nfr"
         android:layout_width="300dp"
         android:layout_height="200dp"
         app:srcCompat="@drawable/frutospenca"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/textView_nfr"
+        android:layout_alignStart="@+id/textView_nfr" />
     <Button
         android:id="@+id/btn_nfr"
         android:layout_width="wrap_content"

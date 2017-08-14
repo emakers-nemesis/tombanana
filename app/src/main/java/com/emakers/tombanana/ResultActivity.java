@@ -32,7 +32,7 @@ public class ResultActivity extends AppCompatActivity implements View.OnClickLis
         Double result =  22 * RNA.calculate(input);
 
         /* Imprime o resultado da RNA para o vetor iData e desnormaliza a saída */
-        TextView_result1.setText(Double.toString(result).format("%.2f", result));
+        TextView_result1.setText(Double.toString(result).format("%.3f", result));
 
     }
 
