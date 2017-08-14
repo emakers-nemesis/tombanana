@@ -25,7 +25,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="55dp"
         android:text="Olá,\nEsse aplicativo usa características de uma produção de bananas para calcular uma previsão aproximada do peso do cacho de banana na colheita. Para isso serão solicitados dados sobre a safra atual, favor preencha-os com atenção."
         android:gravity="center"
         android:textStyle="bold"
@@ -46,5 +46,14 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="64dp"
         android:layout_marginEnd="64dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="37dp"
+        app:srcCompat="@drawable/MacacoTom"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
