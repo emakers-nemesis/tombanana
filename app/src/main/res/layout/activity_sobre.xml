@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -63,6 +64,16 @@
             android:layout_alignLeft="@+id/text_sobre1"
             android:layout_alignStart="@+id/text_sobre1"
             android:layout_marginTop="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/emakers"
+            android:layout_alignTop="@+id/text_sobre1"
+            android:layout_toRightOf="@+id/text_sobre1"
+            android:layout_toEndOf="@+id/text_sobre1"
+            android:layout_marginTop="30dp" />
 
     </RelativeLayout>
 </ScrollView>
