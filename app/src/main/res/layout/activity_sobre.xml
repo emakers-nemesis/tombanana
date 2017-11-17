@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.emakers.tombanana.sobreActivity">
+
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anterior"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="355dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text_sobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="O TomBanana foi desenvolvido pelo EMakers – Núcleo de Estudos na área de Sistemas Embarcados e Internet das Coisas – do Departamento de Ciência da Computação da Universidade Federal de Lavras (DCC - UFLA)."
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/text_sobre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Equipe:\n\n- Bruno Queiroz Santos\n- Franciscone Luiz de Almeida Júnior\n- Gabriel Marques de Melo\n- Guilherme da Silva Teixeira\n- Matheus Galvão Ferreira\n\nCoordenador:\n\n- Prof. Bruno de Abreu Silva"
+            android:layout_below="@+id/text_sobre"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp" />
+
+        <TextView
+            android:id="@+id/text_sobre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="left"
+            android:text="O aplicativo foi baseado na tese de doutorado “Modelagem matemática na previsão de colheita de bananeira: regressão linear múltipla x redes neurais artificiais” apresentada à UFLA em 2010 por Joyce Dória Rodrigues Soares.\n\nAgradecimentos especiais ao Prof. Wilian Soares Lacerda e a todos os envolvidos no desenvolvimento do aplicativo. "
+            android:layout_below="@+id/text_sobre1"
+            android:layout_alignLeft="@+id/text_sobre1"
+            android:layout_alignStart="@+id/text_sobre1"
+            android:layout_marginTop="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/emakers"
+            android:layout_alignTop="@+id/text_sobre1"
+            android:layout_toRightOf="@+id/text_sobre1"
+            android:layout_toEndOf="@+id/text_sobre1"
+            android:layout_marginTop="30dp" />
+
+    </RelativeLayout>
+</ScrollView>
