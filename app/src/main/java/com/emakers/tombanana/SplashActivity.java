@@ -17,7 +17,7 @@ public class SplashActivity extends AppCompatActivity implements Runnable{
 
         // Delay antes de chamar a InitialActivity
         Handler handler = new Handler();
-        handler.postDelayed(this, 3000);
+        handler.postDelayed(this, 2000);
 
     }
 

@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "A parte chata vai vir ainda", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -91,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if(id == R.id.action_about){
+            Intent intent = new Intent(this, AboutActivity.class); //instancia a intent com a tela que deseja alcancar
+            startActivity(intent); // pula para a proxima tela
             return true;
         }
 
