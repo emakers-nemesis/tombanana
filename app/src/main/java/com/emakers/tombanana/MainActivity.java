@@ -1,5 +1,6 @@
 package com.emakers.tombanana;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -83,7 +84,13 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_home) {
+            Intent intent = new Intent(this, InitialActivity.class); //instancia a intent com a tela que deseja alcancar
+            startActivity(intent); // pula para a proxima tela
+            return true;
+        }
+
+        if(id == R.id.action_about){
             return true;
         }
 
