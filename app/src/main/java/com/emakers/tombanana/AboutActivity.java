@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class AboutActivity extends AppCompatActivity implements View.OnClickListener{
+public class AboutActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +19,5 @@ public class AboutActivity extends AppCompatActivity implements View.OnClickList
                 onBackPressed(); // volta para pag anterior que estava navegando
             }
         });
-    }
-
-    @Override
-    public void onClick(View view) {
-
     }
 }

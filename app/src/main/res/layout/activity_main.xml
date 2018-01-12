@@ -23,6 +23,7 @@
             android:layout_weight="1"
             android:background="@color/yellow"
             app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="?attr/homeAsUpIndicator"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:title="@string/app_name">
 
